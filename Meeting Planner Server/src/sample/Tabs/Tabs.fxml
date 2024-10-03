@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Tabs.Tabs">
+   <children>
+      <Pane layoutX="2.0" layoutY="-8.0" prefHeight="400.0" prefWidth="769.0">
+         <children>
+            <TabPane layoutY="3.0" prefHeight="400.0" prefWidth="769.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="New Meeting">
+                  <content>
+                    <fx:include source="../MeetingBooking/Schedule.fxml" />
+                  </content>
+                </Tab>
+                <Tab text="Calendar">
+                  <content>
+                    <fx:include source="../TableViewFunction/MeetingTableView.fxml" />
+                  </content>
+                </Tab>
+                  <Tab text="Chat">
+                    <fx:include source="../ChatFunction/Chat.fxml" />
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

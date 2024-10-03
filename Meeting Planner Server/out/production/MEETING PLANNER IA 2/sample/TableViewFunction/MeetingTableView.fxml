@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TableViewFunction.MeetingTableView">
+   <children>
+      <TableView fx:id="meetingTableView" layoutX="29.0" layoutY="82.0" prefHeight="287.0" prefWidth="710.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="89.37701797485352" style="-fx-alignment: center;" text="MeetingID" />
+          <TableColumn fx:id="col_name" prefWidth="106.32515716552734" style="-fx-alignment: center;" text="Name" />
+            <TableColumn fx:id="col_start" prefWidth="91.4071044921875" style="-fx-alignment: center;" text="Start" />
+            <TableColumn fx:id="col_end" prefWidth="95.4344482421875" style="-fx-alignment: center;" text="End" />
+            <TableColumn fx:id="col_place" prefWidth="129.51651000976562" style="-fx-alignment: center;" text="Place" />
+            <TableColumn fx:id="col_date" prefWidth="91.273193359375" style="-fx-alignment: center;" text="Date" />
+            <TableColumn fx:id="col_edit" prefWidth="141.72674560546875" style="-fx-alignment: center;" text=" " />
+        </columns>
+      </TableView>
+      <HBox fx:id="hbox" layoutX="30.0" layoutY="9.0" prefHeight="64.0" prefWidth="123.0">
+         <children>
+            <FontAwesomeIconView fx:id="refresh" fill="#8d8b8b" glyphName="REFRESH" size="40" wrappingWidth="47.459007263183594" onMouseClicked="#refreshClicked">
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
